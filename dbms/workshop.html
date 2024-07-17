@@ -1,0 +1,119 @@
+<html>
+    <body>
+        <title>VibrantVisionWorkshop.com</title>
+        <link rel="stylesheet" href="workshop.css">
+    	<br>
+    	<h2><b><i>Colorful Palatte Workshop </i></b></h2>
+    	<h4><i><b>Join our workshop and unfold your hidden talent :)</b></i> </h4>
+    	<br>
+    	<br>
+    	<br>
+    	<img src="workshop.jpg" class="center" height="600" width="1200" >
+    	<br>
+    	<br>
+	</body>
+</html>
+
+<!-- workshop registration -->
+<div class="container-fluid booking py-5" id="contactform">
+	<div class="container py-5">
+		<div class="row g-5 align-items-center">
+			<div class="col-lg-6">
+				<h1 class="text-white mb-4">Register for <p3><i>Colorful Palatte </i></p3>&nbsp;now:</h1>
+				<hr>
+				
+			</div>
+			<div class="col-lg-6">
+				<p2>
+				<form name="form data">
+					<div class="row g-3">
+						<div class="col-md-6">
+							<div class="form-floating">
+								<br>
+								<label for="firstName">First Name</label>
+								&emsp;&emsp;<input type="text" class="form-control bg-white border-0" name="firstName" id="firstName" placeholder="Your First Name" required>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-floating">
+								<br>
+								<label for="lastName">Last Name</label>
+								&emsp;&emsp;<input type="text" class="form-control bg-white border-0" name="lastName" id="lastName" placeholder="Your Last Name" required>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-floating date" id="date3" data-target-input="nearest">
+								<br>
+								<label for="email">Email ID</label>
+								&emsp;&emsp;<input type="email" class="form-control bg-white border-0" name="email" id="email" placeholder="Email ID" required>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-floating">
+								<br>
+								<label for="phone">Mobile Number</label>
+								&emsp;&emsp;<input type="phone" class="form-control bg-white border-0" name="phone" id="phone" placeholder="Your Mobile Number" required>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-floating date" id="date3" data-target-input="nearest">
+								<br>
+								<label for="city">City</label>
+								&emsp;&emsp;<input type="city" class="form-control bg-white border-0" name="city" id="city" placeholder="Your City" required>
+								
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-floating">
+								<br>
+								<label for="Choose" >Choose your interest</label>
+								<select class="form-select bg-white border-0" name="CategoriesSelect" id="CategoriesSelect" >
+									<option value="Painting">Painting</option>
+									<option value="Sculpture">sculpture</option>
+									<option value="Literature">Literature</option>
+									<option value="Architecture">Architecture</option>
+									<option value="Photography">Photography</option>
+								</select>
+							</div>
+						</div>
+						
+						<div class="col-12">
+							<br>
+							<br>
+							<button class="btn btn-primary text-white w-100 py-3" type="submit"> &emsp;Register &emsp; </button>
+							<br>
+							<br>
+						</div>
+					</div>
+				</form>
+			</p2>
+			</div>
+		</div>
+	</div>
+</div>
+<footer>
+	&copy; 2024 Vibrant Vision Gallery 
+	<br>
+	All rights reserved.
+</footer>
+
+<script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbx-BEijveoR4lBc76xzI5eWpSD2ZMPqJIKoumac_Jfn9BO4Wei0uPTKIFB0CS790egq8Q/exec/exec'
+	const form = document.forms['form data']
+	const msg = document.getElementById("msg")
+	form.addEventListener('submit', e => {
+	  e.preventDefault()
+	  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+	  .then(response => alert("You have registered successfully."))
+	  .then(()=> {form.reset(); })
+		// .then(response => {
+		//     msg.innerHTML= "You have registered successfully."
+		//     setTimeout(function(){
+		//         msg.innerHTML="You have registered successfully."
+		//     },5000)
+		//     form.reset()
+		// })
+		.catch(error => console.error('Error!', error.message))
+	})
+  </script>
+<!-- workshop registration ends -->
