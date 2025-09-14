@@ -1,0 +1,53 @@
+*{
+    position: relative;
+    background-color: rgb(218, 210, 200);
+}
+h2{
+    font-size: 3pc;
+    font-family: "Brush Script MT", cursive;
+    color: rgb(16, 11, 11);
+    text-align: center;
+}
+h4{
+    
+    font-size: 1pc;
+    font-style: oblique;
+    font-family: cursive;
+    color: rgb(33, 9, 114);
+    position: relative;
+    left: 20px;
+    text-align: center;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+p2{
+    text-align: left;
+    font-style: oblique;
+    font-weight: 600;
+    font-size: larger;
+    color: #534f64;
+}
+div{
+    text-align: center;
+}
+button{
+    font-size: x-large;
+}
+h1{
+    color: #534f64;
+}
+p3{
+    color: rgba(7, 7, 118, 0.689);
+}
+footer{
+    position: relative;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+

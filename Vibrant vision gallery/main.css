@@ -1,0 +1,35 @@
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+h2{
+    text-align: center;
+}
+body{
+    position: relative;
+    background-color: rgb(218, 210, 200);
+}
+h1{
+    font-size: 50px;
+    color: rgb(43, 45, 67);
+}
+p{
+    font-size: 20px;
+    font-style: oblique;
+    text-align: center;
+}
+h3{
+    font-size: larger;
+}
+footer{
+    position: relative;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
